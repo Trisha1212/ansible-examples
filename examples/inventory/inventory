@@ -1,0 +1,23 @@
+#web1 ansible_ssh_host=192.168.33.20 ansible_ssh_user=vagrant ansible_ssh_pass=vagrant
+#db1 ansible_ssh_host=192.168.33.30 ansible_ssh_user=vagrant ansible_ssh_pass=vagrant
+# Execute: ansible datacenter -m ping -i inventory
+
+web1 ansible_ssh_host=192.168.33.20
+db1 ansible_ssh_host=192.168.33.30
+
+
+
+[webservers]
+web1
+
+[dbservers]
+db1
+
+# If you did not have children, then ansible will assume systems under the group
+[datacenter:children]
+webservers
+dbservers
+
+[datacenter:vars]
+ansible_ssh_user=vagrant
+ansible_ssh_pass=vagrant
