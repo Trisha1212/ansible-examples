@@ -164,6 +164,10 @@ vagrant@acs:~/playbooks_examples$ cat web_db.yaml
 ansible-playbook web_db.yaml --limit @/home/vagrant/web_db.yaml.retry
 ```  
 
+![Execute Playbook](https://github.com/machzqcq/ansible-examples/blob/master/examples/playbooks/execute_playbook.png)  
+![Failed play](https://github.com/machzqcq/ansible-examples/blob/master/examples/playbooks/failed_play.png)  
+![Retry Failed play](https://github.com/machzqcq/ansible-examples/blob/master/examples/playbooks/retry_failed_play.png)  
+
 
 
 
