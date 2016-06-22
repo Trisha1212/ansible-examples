@@ -1,0 +1,22 @@
+# Execute: ansible datacenter -m ping -i inventory
+
+couch1 ansible_ssh_host=192.168.43.20 
+couch2 ansible_ssh_host=192.168.43.30 
+
+
+
+[webservers]
+#web1
+
+[dbservers]
+couch1
+couch2
+
+# If you did not have children, then ansible will assume systems under the group
+[datacenter:children]
+#webservers
+#dbservers
+
+[dbservers:vars]
+ansible_ssh_user=vagrant
+ansible_ssh_pass=vagrant
