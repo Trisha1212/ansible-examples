@@ -1,7 +1,7 @@
 Couchbase Ansible Playbook
 ===========================
 
-This project contains sample playbooks to manage Couchbase cluster.
+This project contains sample playbooks to manage Couchbase cluster community edition 4.0.x
 
 
 Note: the current scripts are only working on Ubuntu/Debian for now
