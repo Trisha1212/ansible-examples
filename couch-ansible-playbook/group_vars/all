@@ -1,12 +1,12 @@
 # Adminisrator user and password
 admin_user: Administrator
-admin_password: Inmar2016
+admin_password: Welcome1
 
 # ram quota for the cluster
 cluster_ram_quota: 1024
 
 # bucket and replicas
-bucket_name: psn_rebates
+bucket_name: blah_bucket
 bucket_ram_quota: 200
 num_replicas: 2
 
